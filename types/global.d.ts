@@ -9,7 +9,12 @@ declare global {
         preferredIndustry: string;
     };
 
-      type FormInputProps = {
+    type SignInFormData = {
+        email: string;
+        password: string;
+    };
+
+    type FormInputProps = {
         name: string;
         label: string;
         placeholder: string;
@@ -21,7 +26,7 @@ declare global {
         value?: string;
     };
 
-       type SelectFieldProps = {
+    type SelectFieldProps = {
         name: string;
         label: string;
         placeholder: string;
