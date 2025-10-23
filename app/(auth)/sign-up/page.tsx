@@ -1,5 +1,6 @@
 "use client";
 
+import { CountrySelect } from "@/components/forms/CountrySelect";
 import FooterLink from "@/components/forms/FooterLink";
 import InputField from "@/components/forms/inputField";
 import SelectField from "@/components/forms/SelectField";
@@ -72,6 +73,14 @@ const SignUp = () => {
           register={register}
           error={errors.password}
           validation={{ required: "Password is required", minLength: 8 }}
+        />
+
+        <CountrySelect
+          name="country"
+          label="Country"
+          control={control}
+          error={errors.country}
+          required
         />
 
         <SelectField
